@@ -15,4 +15,4 @@ jobs:
         run: |
           echo "$EG_AUTH_JSON" > $GITHUB_WORKSPACE/device_auths.json
           docker run --rm --pull always --volume "$GITHUB_WORKSPACE/device_auths.json:/app/data/device_auths.json" ghcr.io/jackblk/epicgames-freebies-claimer:latest
-          docker run --rm --pull always -it --volume "$GITHUB_WORKSPACE/device_auths.json:/app/data/device_auths.json" --volume "%cd%/history.json:/app/data/history.json" ghcr.io/jackblk/epicgames-freebies-claimer:latest
+          docker run --rm --pull always --volume "$GITHUB_WORKSPACE/device_auths.json:/app/data/device_auths.json" --volume "$GITHUB_WORKSPACE/history.json:/app/data/history.json" ghcr.io/jackblk/epicgames-freebies-claimer:latest
