@@ -1,4 +1,4 @@
-# EpicGames Claimer
+# Epic Games Claimer
 ## Description
 Claim [available free game promotions](https://www.epicgames.com/store/free-games) from the Epic Games Store.
 
