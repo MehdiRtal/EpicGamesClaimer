@@ -60,7 +60,7 @@ function sleep(delay) {
     let { options, delay, loop, appriseUrl } = Config;
 
     do {
-        Logger.info(`Epicgames Freebies Claimer (${Package.version}) by ${Package.author.name || Package.author}`);
+        Logger.info(`Epic Games Claimer (${Package.version}) by ${Package.author.name || Package.author}`);
 
         let latest = await latestVersion().catch((err) => {
             Logger.error(`Failed to check for updates (${err})`);
