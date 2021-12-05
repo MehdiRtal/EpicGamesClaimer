@@ -1,0 +1,63 @@
+{
+    "name": "epicgames-freebies-claimer",
+    "version": "1.5.6",
+    "description": "Claim free game promotions from the Epic Game Store",
+    "author": {
+        "name": "Revadike",
+        "email": "revadike@outlook.com",
+        "url": "https://revadike.com"
+    },
+    "contributors": [
+        "davispuh",
+        "drosoCode",
+        "ffuubarbuzz",
+        "jackblk",
+        "JourneyOver",
+        "lingsamuel",
+        "lupohan44",
+        "MusTangLee",
+        "wzxjohn",
+        "zaevi"
+    ],
+    "funding": [
+        {
+            "type": "patreon",
+            "url": "https://patreon.com/Revadike"
+        },
+        {
+            "type": "steam",
+            "url": "https://steamcommunity.com/tradeoffer/new/?partner=82699538&token=V7DQVtra"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.me/Revadike"
+        }
+    ],
+    "main": "claimer.js",
+    "scripts": {
+        "test": "mocha",
+        "start": "node claimer.js"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revadike/epicgames-freebies-claimer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/revadike/epicgames-freebies-claimer/issues"
+    },
+    "homepage": "https://github.com/revadike/epicgames-freebies-claimer",
+    "url": "https://github.com/revadike/epicgames-freebies-claimer",
+    "devDependencies": {
+        "@babel/core": "latest",
+        "@babel/eslint-parser": "latest",
+        "chai": "*",
+        "eslint": "latest",
+        "mocha": "*"
+    },
+    "dependencies": {
+        "colors": "^1.4.0",
+        "epicgames-client": "Revadike/node-epicgames-client#develop",
+        "tracer": "^1.0.3"
+    }
+}
