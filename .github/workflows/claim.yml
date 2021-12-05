@@ -1,0 +1,17 @@
+name: EFC
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 18 * * 4"
+
+jobs:
+  EFC:
+    name: Claim Freebie
+    runs-on: ubuntu-latest
+    steps:
+      - name: Claim
+        env:
+          EG_AUTH_JSON: ${{ secrets.EG_AUTH_JSON }}
+        run: |
+          echo "$EG_AUTH_JSON" > $GITHUB_WORKSPACE/device_auths.json
+          docker run --rm --pull always --volume "$GITHUB_WORKSPACE/device_auths.json:/app/data/device_auths.json" ghcr.io/jackblk/epicgames-freebies-claimer:latest
