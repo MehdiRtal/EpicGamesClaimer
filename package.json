@@ -5,47 +5,6 @@
     "author": {
         "name": "Mehdi"
     },
-    "contributors": [
-        "davispuh",
-        "drosoCode",
-        "ffuubarbuzz",
-        "jackblk",
-        "JourneyOver",
-        "lingsamuel",
-        "lupohan44",
-        "MusTangLee",
-        "wzxjohn",
-        "zaevi"
-    ],
-    "funding": [
-        {
-            "type": "patreon",
-            "url": "https://patreon.com/Revadike"
-        },
-        {
-            "type": "steam",
-            "url": "https://steamcommunity.com/tradeoffer/new/?partner=82699538&token=V7DQVtra"
-        },
-        {
-            "type": "paypal",
-            "url": "https://www.paypal.me/Revadike"
-        }
-    ],
-    "main": "claimer.js",
-    "scripts": {
-        "test": "mocha",
-        "start": "node claimer.js"
-    },
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/revadike/epicgames-freebies-claimer.git"
-    },
-    "bugs": {
-        "url": "https://github.com/revadike/epicgames-freebies-claimer/issues"
-    },
-    "homepage": "https://github.com/revadike/epicgames-freebies-claimer",
-    "url": "https://github.com/revadike/epicgames-freebies-claimer",
     "devDependencies": {
         "@babel/core": "latest",
         "@babel/eslint-parser": "latest",
