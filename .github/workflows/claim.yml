@@ -1,11 +1,11 @@
-name: Claimer
+name: Claim
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 18 * * 4"
 
 jobs:
-  Claimer:
+  EFC:
     name: Claim
     runs-on: ubuntu-latest
     steps:
