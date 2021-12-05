@@ -5,8 +5,8 @@ on:
     - cron: "0 18 * * 4"
 
 jobs:
-  EFC:
-    name: Claim Freebie
+  Claimer:
+    name: Claim
     runs-on: ubuntu-latest
     steps:
       - name: Claim
