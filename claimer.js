@@ -60,7 +60,7 @@ function sleep(delay) {
     let { options, delay, loop, appriseUrl } = Config;
 
     do {
-        Logger.info(`Epic Games Claimer (${Package.version}) by ${Package.author.name || Package.author}`);
+        Logger.info(`Epicgames Freebies Claimer (${Package.version}) by ${Package.author.name || Package.author}`);
 
         let latest = await latestVersion().catch((err) => {
             Logger.error(`Failed to check for updates (${err})`);
@@ -116,7 +116,7 @@ function sleep(delay) {
                     let purchased = await client.purchase(offer, 1);
                     if (purchased) {
                         Logger.info(`Successfully claimed ${offer.title} (${purchased})`);
-                        newlyClaimedPromos.push(offer);
+                        newlyClaimedPromos.push(offer.title);
                     } else {
                         Logger.warn(`${offer.title} was already claimed for this account`);
                     }
