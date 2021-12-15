@@ -1,7 +1,11 @@
 {
     "name": "EpicGamesClaimer",
-    "version": "1.5.6",
-    "description": "Claim free game promotions from the Epic Game Store"
+    "version": "1.5.7",
+    "description": "Claim free game promotions from the Epic Game Store",
+    "main": "claimer.js",
+    "scripts": {
+        "test": "mocha",
+        "start": "node claimer.js"
     },
     "devDependencies": {
         "@babel/core": "latest",
